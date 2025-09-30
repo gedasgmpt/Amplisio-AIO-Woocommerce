@@ -1,0 +1,260 @@
+:root {
+  color-scheme: light dark;
+}
+
+.amplisio-dashboard__layout {
+  display: grid;
+  gap: 2rem;
+  font-family: var(--amplisio-font-family, 'Inter', sans-serif);
+  color: #0f172a;
+}
+
+.amplisio-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.amplisio-card {
+  background: #fff;
+  border-radius: var(--amplisio-radius, 12px);
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.amplisio-card__title {
+  font-size: 0.9rem;
+  color: rgba(15, 23, 42, 0.7);
+  margin: 0 0 0.5rem;
+}
+
+.amplisio-card__value {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: 600;
+  color: var(--amplisio-primary, #2563eb);
+}
+
+.amplisio-card__description {
+  margin-top: 0.75rem;
+  color: rgba(15, 23, 42, 0.6);
+}
+
+.amplisio-form {
+  background: #fff;
+  border-radius: var(--amplisio-radius, 12px);
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+  display: grid;
+  gap: 1.5rem;
+}
+
+.amplisio-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.amplisio-fieldset legend {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.amplisio-field {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.amplisio-field input,
+.amplisio-field textarea,
+.amplisio-field select {
+  border-radius: var(--amplisio-radius, 12px);
+  border: 1px solid rgba(15, 23, 42, 0.15);
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+}
+
+.amplisio-field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.amplisio-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.amplisio-toggle input[type='checkbox'] {
+  width: 46px;
+  height: 24px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.1);
+  appearance: none;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.amplisio-toggle input[type='checkbox']::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.amplisio-toggle input[type='checkbox']:checked {
+  background: var(--amplisio-accent, #ec4899);
+}
+
+.amplisio-toggle input[type='checkbox']:checked::after {
+  transform: translateX(22px);
+}
+
+.amplisio-button {
+  justify-self: start;
+  background: var(--amplisio-primary, #2563eb);
+  color: #fff;
+  border: none;
+  border-radius: var(--amplisio-radius, 12px);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.amplisio-button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.amplisio-button--ghost {
+  background: transparent;
+  color: var(--amplisio-primary, #2563eb);
+  border: 1px solid currentColor;
+}
+
+.amplisio-panel {
+  background: #fff;
+  border-radius: var(--amplisio-radius, 12px);
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+  display: grid;
+  gap: 1.5rem;
+}
+
+.amplisio-panel__form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.amplisio-panel__notice {
+  color: rgba(15, 23, 42, 0.65);
+  font-style: italic;
+}
+
+.amplisio-panel__message {
+  color: var(--amplisio-primary, #2563eb);
+  font-weight: 500;
+}
+
+.amplisio-sequence {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: var(--amplisio-radius, 12px);
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+  background: rgba(37, 99, 235, 0.04);
+}
+
+.amplisio-sequence--settings {
+  background: rgba(15, 23, 42, 0.03);
+}
+
+.amplisio-sequence__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amplisio-sequence__header h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.amplisio-sequence__variables {
+  margin: 0;
+  color: rgba(15, 23, 42, 0.6);
+  font-size: 0.85rem;
+}
+
+.amplisio-sequence__coupon {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.amplisio-sequence__actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.amplisio-preview {
+  border-top: 1px solid rgba(15, 23, 42, 0.1);
+  padding-top: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.amplisio-preview__body {
+  background: #fff;
+  border-radius: var(--amplisio-radius, 12px);
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  padding: 1rem;
+  max-height: 240px;
+  overflow: auto;
+}
+
+.amplisio-dashboard__loading,
+.amplisio-dashboard__empty {
+  color: rgba(15, 23, 42, 0.7);
+  font-style: italic;
+}
+
+@media (prefers-color-scheme: dark) {
+  .amplisio-dashboard__layout,
+  .amplisio-card,
+  .amplisio-form,
+  .amplisio-panel {
+    color: #e2e8f0;
+    background: #0f172a;
+    border-color: rgba(226, 232, 240, 0.1);
+  }
+
+  .amplisio-card,
+  .amplisio-form,
+  .amplisio-panel {
+    box-shadow: none;
+  }
+
+  .amplisio-field input,
+  .amplisio-field textarea,
+  .amplisio-field select {
+    background: rgba(226, 232, 240, 0.1);
+    color: #e2e8f0;
+    border-color: rgba(226, 232, 240, 0.2);
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "amplisio-aio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "watch": "node esbuild.config.js --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.12"
+  }
+}
