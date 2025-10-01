@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ruleset name="Amplisio AIO Coding Standards">
+    <description>WordPress coding standards with project-specific exclusions.</description>
+    <file>amplisio-aio.php</file>
+    <directory>src</directory>
+    <directory>tests</directory>
+
+    <arg name="extensions" value="php"/>
+
+    <rule ref="WordPress-Core"/>
+    <rule ref="WordPress-Extra"/>
+    <rule ref="WordPress-Docs"/>
+
+    <exclude-pattern>vendor/</exclude-pattern>
+    <exclude-pattern>assets/</exclude-pattern>
+</ruleset>

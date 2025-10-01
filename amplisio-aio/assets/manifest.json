@@ -1,0 +1,10 @@
+{
+  "admin": {
+    "js": "admin/admin.bundle-3f4a2c1b.js",
+    "css": "admin/admin.bundle-3f4a2c1b.css"
+  },
+  "front": {
+    "js": "front/front.bundle-8d7c6b5a.js",
+    "css": "front/front.bundle-8d7c6b5a.css"
+  }
+}

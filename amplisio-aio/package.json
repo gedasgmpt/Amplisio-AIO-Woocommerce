@@ -1,0 +1,14 @@
+{
+  "name": "amplisio-aio",
+  "version": "0.1.0",
+  "description": "Build tooling for Amplisio AIO for WooCommerce",
+  "type": "module",
+  "scripts": {
+    "dev": "node build.mjs --watch",
+    "build": "node build.mjs --minify"
+  },
+  "devDependencies": {
+    "chokidar": "^3.5.3",
+    "esbuild": "^0.20.2"
+  }
+}

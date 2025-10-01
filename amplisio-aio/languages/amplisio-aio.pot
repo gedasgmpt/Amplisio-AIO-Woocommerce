@@ -1,0 +1,81 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Amplisio AIO for WooCommerce 0.1.0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Language: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: amplisio-aio.php:40
+msgid "Amplisio AIO for WooCommerce requires PHP 8.1 or newer."
+msgstr ""
+
+#: amplisio-aio.php:47
+msgid "Amplisio AIO for WooCommerce requires WooCommerce to be activated."
+msgstr ""
+
+#: amplisio-aio.php:68
+msgid "Amplisio AIO core classes could not be loaded."
+msgstr ""
+
+#: src/AdminUI/SettingsPage.php:35 src/AdminUI/SettingsPage.php:36
+msgid "Amplisio AIO"
+msgstr ""
+
+#: src/AdminUI/SettingsPage.php:43
+msgid "You do not have permission to access this page."
+msgstr ""
+
+#: src/AdminUI/SettingsPage.php:47
+msgid "Amplisio AIO Settings"
+msgstr ""
+
+#: src/AdminUI/SettingsPage.php:61
+msgid "Control Amplisio styling from a single dashboard."
+msgstr ""
+
+#: src/AdminUI/SettingsPage.php:62
+msgid "General settings"
+msgstr ""
+
+#: src/AdminUI/SettingsPage.php:63
+msgid "Modules"
+msgstr ""
+
+#: src/AdminUI/SettingsPage.php:64
+msgid "Accent color"
+msgstr ""
+
+#: src/AdminUI/SettingsPage.php:65
+msgid "Save settings"
+msgstr ""
+
+#: src/AdminUI/SettingsPage.php:66
+msgid "Enabled"
+msgstr ""
+
+#: src/AdminUI/SettingsPage.php:67
+msgid "Disabled"
+msgstr ""
+
+#: src/AdminUI/SettingsPage.php:68
+msgid "Settings saved successfully."
+msgstr ""
+
+#: src/AdminUI/SettingsPage.php:69
+msgid "An error occurred while saving."
+msgstr ""
+
+#: src/REST/SettingsController.php:66
+msgid "Invalid payload."
+msgstr ""
+
+#: src/Modules/_Example/ExampleModule.php:15
+msgid "Example Module"
+msgstr ""
+
+#: src/Modules/_Example/ExampleModule.php:20
+msgid "Demonstrates how modules can be toggled on and off."
+msgstr ""
