@@ -1,0 +1,60 @@
+name: Amplisio AIO CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  composer-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          coverage: none
+      - name: Validate composer.json
+        run: composer validate --strict
+
+  phpcs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          coverage: none
+      - name: Install dependencies
+        run: composer install --no-progress --prefer-dist
+      - name: Run PHPCS
+        run: vendor/bin/phpcs
+
+  phpunit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          coverage: none
+      - name: Install dependencies
+        run: composer install --no-progress --prefer-dist
+      - name: Run PHPUnit
+        run: vendor/bin/phpunit
+
+  npm-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build assets
+        run: npm run build

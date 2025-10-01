@@ -1,0 +1,5 @@
+/vendor/
+/node_modules/
+/assets/**/*.map
+.DS_Store
+.idea/

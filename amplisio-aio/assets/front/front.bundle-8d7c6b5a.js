@@ -1,0 +1,1 @@
+(()=>{"use strict";const o=()=>{!window.amplisioAioFront||!window.amplisioAioFront.accentColor||document.documentElement.style.setProperty("--amplisio-accent",window.amplisioAioFront.accentColor)};document.addEventListener("DOMContentLoaded",o)})();
